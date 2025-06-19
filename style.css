@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #0a1014;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-wrapper {
+  display: flex;
+  width: 90%;
+  height: 90vh;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 30%;
+  background-color: #121b22;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #2f3b45;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #202c33;
+}
+
+.search-bar i {
+  color: #8696a0;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background-color: #2a3942;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Chat list */
+.chat-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.chat-item {
+  padding: 15px;
+  background-color: #1f2c33;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.chat-item:hover {
+  background-color: #263b45;
+}
+
+/* Chat area */
+.chat-area {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: #0b141a;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #202c33;
+  color: white;
+}
+
+.chat-user-info strong {
+  font-size: 1.1rem;
+}
+
+.chat-user-info small {
+  font-size: 0.75rem;
+  color: #00a884;
+}
+
+.chat-icons i {
+  font-size: 1.3rem;
+  margin-left: 20px;
+  cursor: pointer;
+  color: #8696a0;
+}
+
+/* Chat messages */
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  max-width: 65%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #e9edef;
+  word-wrap: break-word;
+}
+
+.user {
+  align-self: flex-end;
+  background-color: #005c4b;
+}
+
+.bot {
+  align-self: flex-start;
+  background-color: #202c33;
+}
+
+/* Input */
+.input-area {
+  display: flex;
+  padding: 12px;
+  background-color: #202c33;
+  align-items: center;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 20px;
+  background-color: #2a3942;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.input-area button {
+  margin-left: 10px;
+  background-color: #00a884;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background-color: #029e76;
+}

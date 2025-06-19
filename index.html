@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CodTech Chat</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <div class="chat-wrapper">
+    <div class="sidebar">
+      <div class="search-bar">
+        <i class="ph ph-magnifying-glass"></i>
+        <input type="text" placeholder="Search or start new chat" />
+      </div>
+      <div class="chat-list">
+        <div class="chat-item">💬 John Doe</div>
+        <div class="chat-item">💬 Jane Smith</div>
+      </div>
+    </div>
+
+    <div class="chat-area">
+      <div class="chat-header">
+        <div class="chat-user-info">
+          <strong>CodTech Support</strong>
+          <small>Online</small>
+        </div>
+        <div class="chat-icons">
+          <i class="ph ph-magnifying-glass"></i>
+          <i class="ph ph-phone"></i>
+          <i class="ph ph-video-camera"></i>
+        </div>
+      </div>
+
+      <div class="chat-box" id="chat-box"></div>
+
+      <div class="input-area">
+        <input type="text" id="message-input" placeholder="Type a message..." />
+        <button onclick="sendMessage()">
+          <i class="ph ph-paper-plane-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
